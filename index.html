@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Codificação UTF-8-->
+    <meta charset="UTF-8">
+    <!-- Tornando o site responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Descubra se puder </title>
+    <!-- Vínculo com o arquivo CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Caixa que contém todo o conteúdo do jogo -->
+     <div class="container">
+        <!-- Título principal do Jogo -->
+         <h1> Descubra a palavra parça 😂 </h1>
+         <!-- Imagem no topo do jogo -->
+          <img id="imagem-topo" src="imagens/pinguim.jpg" alt="Imagem do topo" style="width:100%; max-width: 200px; height: auto; border-radius: 10px"/>
+          <!-- Seção onde a palavra secreta misteriosa será mostrada -->
+           <div id="palavra">
+            <h2> Palavra: </h2>
+            <!-- aQUI SERÁ ATUALIZADA A PALAVRA SECRETA COM AS LETRAS E ESPAÇOS -->
+             <div id="palavra-secreta"></div>
+           </div>
+           <!-- Mostrar o número de letras da palavra secreta -->
+            <div id="numero-letras">
+              <h3  id="numero-letras"> Número de letras: 0 </h3>
+            </div>
+
+            <!-- Divisória onde o número de tentativas restantes será mostrado para o cpx -->
+             <div id="tentativas">
+              <h3> Tentativas Restantes : <span id="tentativas-contagem"> 5 </span></h3>
+             </div>
+             <!-- Caixa de entra onde o usuário pode digitar uma letra -->
+              <input type="text" id="letra" maxlength="1" placeholder="Digite uma letra "/>
+              <!-- Botão que chama a função 'verificarLetra' quando pressionado -->
+               <button onclick="verificarLetra()"> Chutar </button>
+
+               <!-- Aqui será mostrada a mensagem do jogo, informndo o resultado do chute -->
+                <p id="mensagem"></p>
+                <!-- Botão que reinicia o jogo -->
+                <button onclick="reiniciarJogo()"> Reiniciar Jogo </button>
+                <!-- Imagens que indicam se o chute foi correto ou incorreto -->
+                 <img id="imagem-acerto" src="imagens/acertou.png" alt="Acerto" style="display:none; width: 100px; height: 100px;"/>
+
+
+    
+</body>
+</html>
