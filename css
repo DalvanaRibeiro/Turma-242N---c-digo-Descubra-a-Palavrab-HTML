@@ -1,0 +1,10 @@
+/* Estilo geral do corpo da paágina */
+body{
+    background-color: hsl(295, 64%, 69%); /* Cor do fundo */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* tipo de fonte*/
+    display: flex; /* Usando o modelo flecbox para organizar o conteúdo */
+    align-items: center; /* Centralizar verticalmente o conteúdo */
+    height: 100vh; /* Altura ocupa 100% da altura da janela do navegador */
+    margin: 0; /* Remove a margem padrão do navegador */
+}
+/* Estilo da caixa que contém o conteúdo principal do jogo
